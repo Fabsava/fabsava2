@@ -6,7 +6,7 @@
   "test": "echo \"Error: no test specified\" && exit 1",
   "dev": "mastra dev",
   "build": "mastra build",
-  "weather-forecast-mcp5": "npx -y @smithery/cli@latest run @Fabsava/fabsava2 --key d03796c0-558c-4e02-8f7f-a14fdf0c2db9 --profile international-fox-vDzpC6"
+  "weather-forecast-mcp5": "npx -y @smithery/cli@latest run @Fabsava/fabsava2-mcp --key d03796c0-558c-4e02-8f7f-a14fdf0c2db9 --profile international-fox-vDzpC6"
 },
   "keywords": [],
   "author": "",
