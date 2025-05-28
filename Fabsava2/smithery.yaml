@@ -1,0 +1,19 @@
+# smithery.yaml
+project:
+  name: weather-mcp
+  version: "1.0.0"
+
+mcp:
+  # we’re using the HTTP server you already start in code
+  type: http
+  port: 8080
+  path: /mcp
+
+build:
+  # install & compile your TypeScript
+  - npm ci
+  - npm run build
+
+run:
+  # this should launch your compiled .js that calls server.startHTTP()
+  command: node dist/index.js

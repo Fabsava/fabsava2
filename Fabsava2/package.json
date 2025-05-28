@@ -2,11 +2,12 @@
   "name": "fabsava2",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "mastra dev",
-    "build": "mastra build"
-  },
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "dev": "mastra dev",
+  "build": "mastra build",
+  "weather-forecast-mcp5": "npx -y @smithery/cli@latest run @Fabsava/fabsava2 --key d03796c0-558c-4e02-8f7f-a14fdf0c2db9 --profile international-fox-vDzpC6"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
