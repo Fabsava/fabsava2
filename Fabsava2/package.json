@@ -6,7 +6,9 @@
   "test": "echo \"Error: no test specified\" && exit 1",
   "dev": "mastra dev",
   "build": "mastra build",
-  "weather-forecast-mcp5": "npx -y @smithery/cli@latest inspect @Fabsava/fabsava2-mcp"
+  "install-deps": "npm install",
+  "weather-forecast-mcp5": "npx -y @smithery/cli@latest inspect @Fabsava/fabsava2-mcp",
+  "youtube-music-mcp": "npx -y @smithery/cli@latest inspect @Utku-Unluer/youtube-music-mcp"
 },
   "keywords": [],
   "author": "",
@@ -22,6 +24,7 @@
     "@mastra/libsql": "^0.10.0",
     "@mastra/loggers": "^0.10.0",
     "@mastra/memory": "^0.10.1",
+    "@mastra/mcp": "^0.10.1",
     "zod": "^3.25.32"
   },
   "devDependencies": {
