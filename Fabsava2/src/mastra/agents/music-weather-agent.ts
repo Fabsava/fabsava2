@@ -5,12 +5,12 @@ import { LibSQLStore } from '@mastra/libsql';
 
 // Import tools
 import { weatherTool } from '../tools/weather-tool';
-import { 
-  searchMusicTool, 
-  getSongDetailsTool, 
-  getArtistInfoTool, 
-  getPlaylistTool, 
-  getTrendingMusicTool 
+import {
+  searchMusicTool,
+  getSongDetailsTool,
+  getArtistInfoTool,
+  getPlaylistTool,
+  getTrendingMusicTool
 } from '../tools/youtube-music-tool';
 
 export const musicWeatherAgent = new Agent({
@@ -55,7 +55,7 @@ export const musicWeatherAgent = new Agent({
     Use the available tools to fetch real-time weather data and music information.
   `,
   model: openai('gpt-4o-mini'),
-  tools: { 
+  tools: {
     weatherTool,
     searchMusicTool,
     getSongDetailsTool,

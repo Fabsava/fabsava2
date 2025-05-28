@@ -6,6 +6,10 @@
   "test": "echo \"Error: no test specified\" && exit 1",
   "dev": "mastra dev",
   "build": "mastra build",
+  "server": "ts-node src/server.ts",
+  "server:dev": "ts-node --watch src/server.ts",
+  "mobile": "cd mobile-app && npm start",
+  "mobile:install": "cd mobile-app && npm install",
   "install-deps": "npm install",
   "weather-forecast-mcp5": "npx -y @smithery/cli@latest inspect @Fabsava/fabsava2-mcp",
   "youtube-music-mcp": "npx -y @smithery/cli@latest inspect @Utku-Unluer/youtube-music-mcp"
@@ -25,11 +29,16 @@
     "@mastra/loggers": "^0.10.0",
     "@mastra/memory": "^0.10.1",
     "@mastra/mcp": "^0.10.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
     "zod": "^3.25.32"
   },
   "devDependencies": {
     "@types/node": "^22.15.23",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
     "mastra": "^0.10.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "ts-node": "^10.9.2"
   }
 }
