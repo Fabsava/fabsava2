@@ -3,16 +3,16 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Install dependencies
+# package.json ve lock dosyalarını kopyala, bağımlılıkları kur
 COPY package*.json ./
 RUN npm ci
 
-# Copy everything & build
+# Kodunu kopyala, build et
 COPY . .
 RUN npm run build
 
-# Expose the same port as in smithery.yaml
+# Uygulamanın dinlediği port
 EXPOSE 8080
 
-# Launch your MCP HTTP server
+# Smithery için çalıştırma komutu
 CMD ["node", "dist/index.js"]
